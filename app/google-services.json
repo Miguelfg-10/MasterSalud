@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "367283301818",
+    "project_id": "visualizarpacientes",
+    "storage_bucket": "visualizarpacientes.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367283301818:android:ca5567295be3cf26e94183",
+        "android_client_info": {
+          "package_name": "us.master_salud.master_saluddigital.visualizarpacientes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZFWm6g-7SCuAC0hA60_lMn1HS4oxZhFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

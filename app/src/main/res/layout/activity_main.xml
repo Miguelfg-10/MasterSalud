@@ -1,0 +1,68 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Botón para crear un nuevo paciente -->
+    <Button
+        android:id="@+id/btnNuevoPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Paciente"
+        android:onClick="insertaPaciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp" />
+
+    <!-- Botón para buscar paciente -->
+    <Button
+        android:id="@+id/btnBuscarPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar Paciente"
+        android:onClick="buscaPaciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNuevoPaciente"
+        android:layout_marginTop="24dp" />
+
+    <!-- EditText para búsqueda de paciente (inicialmente oculto) -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="248dp"
+        android:layout_height="93dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarPaciente"
+        android:layout_marginTop="92dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="NuhsaPaciente"
+            android:inputType="textPersonName"
+            android:visibility="gone"/> <!-- Se oculta inicialmente -->
+    </LinearLayout>
+
+    <!-- Botón para buscar por grupo sanguíneo -->
+    <Button
+        android:id="@+id/btnBuscarPorGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar por Grupo Sanguíneo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarPaciente"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
